@@ -1,6 +1,5 @@
 {
     "entryPoints": ["../vexflow/entry/vexflow.ts"],
-    "name": "v5.0.0",
     "excludePrivate": true,
     "excludeProtected": false,
     "disableSources": false,

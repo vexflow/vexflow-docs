@@ -1,5 +1,5 @@
-# VERSION=5.0.0 # The most recent release of VexFlow.
-VERSION=main # Use this to generate the latest version of the API docs.
+VERSION=5.0.0 # The most recent release of VexFlow.
+# VERSION=main # Use this to generate the latest version of the API docs.
 
 echo "Generate API docs for VexFlow" $VERSION
 
@@ -18,12 +18,15 @@ cd ../vexflow/
 git checkout $VERSION
 SOURCE_DIR=$(pwd)
 
+
 cd ../vexflow-docs/
 DEST_DIR=$(pwd)
 if [ "$VERSION" = "main" ]; then
   DEST_DIR="$DEST_DIR/api/dev"
+  NAME="dev"
 else
   DEST_DIR="$DEST_DIR/api/$VERSION"
+  NAME="v${VERSION}"
 fi
 
 echo ""
@@ -34,4 +37,4 @@ echo ""
 echo "Press ENTER to continue or CTRL-C to cancel..."
 read -n 1 -s
 
-npx typedoc --out $DEST_DIR
+npx typedoc --name $NAME --out $DEST_DIR
