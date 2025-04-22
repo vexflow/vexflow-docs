@@ -1,10 +1,9 @@
 {
-  "entryPoints": ["../vexflow/src/index.ts"],
-  "out": "docs/",
-  "name": "vexflow",
-  "excludeProtected": true,
-  "excludePrivate": true,
-  "disableSources": true,
-  "hideGenerator": true,
-  "intentionallyNotExported": ["OffscreenCanvas", "OffscreenCanvasRenderingContext2D"]
+    "entryPoints": ["../vexflow/entry/vexflow.ts"],
+    "excludePrivate": true,
+    "excludeProtected": false,
+    "disableSources": false,
+    "sourceLinkTemplate": "https://github.com/vexflow/vexflow/blob/{gitRevision}/{path}#L{line}",
+    "hideGenerator": true
+    // "intentionallyNotExported": ["OffscreenCanvas", "OffscreenCanvasRenderingContext2D"]
 }
