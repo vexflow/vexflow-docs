@@ -1,7 +1,7 @@
 {
   "name": "vexflow-docs",
-  "version": "5.0.0-alpha.11",
-  "description": "VexFlow API documentation.",
+  "version": "5.0.0",
+  "description": "VexFlow documentation.",
   "repository": {
     "type": "git",
     "url": "https://github.com/vexflow/vexflow-docs.git"
@@ -13,10 +13,11 @@
   "license": "MIT",
   "files": [],
   "scripts": {
-    "start": "typedoc"
+    "start": "typedoc --out ./temp-docs"
   },
   "devDependencies": {
-    "@types/node": "^20.8.10",
-    "typedoc": "^0.25.3"
+    "@types/node": "^22.14.0",
+    "@types/qunit": "^2.19.12",
+    "typedoc": "^0.28.3"
   }
 }
